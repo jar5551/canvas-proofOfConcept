@@ -21,6 +21,7 @@ $(document).ready(function () {
                 posY: 50
             }
         };
+
         _this.c = document.getElementById(elementId);
         _this.ctx = _this.c.getContext('2d');
 
