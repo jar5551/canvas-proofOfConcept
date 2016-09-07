@@ -23,6 +23,7 @@ bunny
     .on('mouseover', onBunnyOver)
     .on('mouseout', onButtonOut)
     .on('touchstart', onBunnyDown)
+    .on('touchend', onButtonOut)
 ;
 
 stage.addChild(bunny);
