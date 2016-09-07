@@ -21,9 +21,9 @@ bunny.position.y = 150;
 bunny
     .on('mousedown', onBunnyDown)
     .on('mouseover', onBunnyOver)
-    .on('mouseout', onButtonOut);
-
-
+    .on('mouseout', onButtonOut)
+    .on('touchstart', onBunnyDown)
+;
 
 stage.addChild(bunny);
 
