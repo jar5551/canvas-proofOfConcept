@@ -80,13 +80,13 @@ $(document).ready(function () {
 
         };
 
-        console.log(event);
+        console.log(event.alpha);
         if(!this.orientation.alpha) {
             return;
         }
 
-        poziomica.rotate(this.orientation.alpha);
-        gyroCanvas.setText(this.orientation.absolute + ' ' + this.orientation.alpha + ' ' + this.orientation.beta + ' ' + this.orientation.gamma);
+        poziomica.rotate(event.alpha);
+        gyroCanvas.setText(event.alpha);
 
         //gyroCanvas.drawRotatedRectangle(100, 50, 100, 200, this.orientation.alpha);
 
