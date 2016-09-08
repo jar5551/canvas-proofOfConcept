@@ -67,7 +67,7 @@ section {
       width: 200px;
       height: 400px;
       margin: auto;
-      background-color: #000000;
+      background-color: #b7b7b7;
     }
   }
 }
@@ -81,4 +81,5 @@ section {
   @include position(absolute, 0 0 0 0);
   border: 1px solid #000000;
   margin: auto;
+  z-index: 1;
 }

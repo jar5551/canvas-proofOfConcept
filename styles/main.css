@@ -46,7 +46,7 @@ section {
       width: 200px;
       height: 400px;
       margin: auto;
-      background-color: #000000; }
+      background-color: #b7b7b7; }
 
 #myCanvas {
   position: fixed;
@@ -63,6 +63,7 @@ section {
   bottom: 0;
   left: 0;
   border: 1px solid #000000;
-  margin: auto; }
+  margin: auto;
+  z-index: 1; }
 
 /*# sourceMappingURL=main.css.map */

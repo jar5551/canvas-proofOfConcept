@@ -80,7 +80,12 @@ $(document).ready(function () {
         };
 
         console.log(this.orientation.alpha);
+        if(!this.orientation.alpha) {
+            return;
+        }
+
         poziomica.rotate(this.orientation.alpha);
+        gyroCanvas.setText(this.orientation.alpha);
 
         //gyroCanvas.drawRotatedRectangle(100, 50, 100, 200, this.orientation.alpha);
 
@@ -103,12 +108,13 @@ $(document).ready(function () {
           });
         };
 
+
     };
 
-    //var gyroCanvas = new GYROAPP.Canvas('gyroCanvas');
+    var gyroCanvas = new GYROAPP.Canvas('gyroCanvas');
 
-    //gyroCanvas.setFont('28px Arial');
-    //gyroCanvas.setText('0');
+    gyroCanvas.setFont('28px Arial');
+    gyroCanvas.setText('0');
     //gyroCanvas.drawRotatedRectangle(100, 50, 100, 200, 0);
 
     var poziomica = new GYROAPP.Levels('level');
