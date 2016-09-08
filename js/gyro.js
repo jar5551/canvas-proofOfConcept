@@ -81,9 +81,6 @@ $(document).ready(function () {
         };
 
         console.log(event.alpha);
-        if(!this.orientation.alpha) {
-            return;
-        }
 
         poziomica.rotate(event.alpha);
         gyroCanvas.setText(event.alpha);
