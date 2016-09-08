@@ -85,7 +85,7 @@ $(document).ready(function () {
         }
 
         poziomica.rotate(this.orientation.alpha);
-        gyroCanvas.setText(this.orientation.alpha);
+        gyroCanvas.setText(this.orientation);
 
         //gyroCanvas.drawRotatedRectangle(100, 50, 100, 200, this.orientation.alpha);
 
