@@ -112,6 +112,7 @@ $(document).ready(function () {
     //gyroCanvas.drawRotatedRectangle(100, 50, 100, 200, 0);
 
     var poziomica = new GYROAPP.Levels('level');
+    poziomica.rotate(30);
 
     console.log(poziomica);
 
