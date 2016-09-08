@@ -55,9 +55,30 @@ section {
   &#pixi {
 
   }
+
+  &#gyro {
+    @include position(relative);
+    background-color: #037fb7;
+    color: #ffffff;
+    height: 100%;
+
+    #level {
+      @include position(absolute, 0 0 0 0);
+      width: 200px;
+      height: 400px;
+      margin: auto;
+      background-color: #000000;
+    }
+  }
 }
 
 #myCanvas {
   @include position(fixed, 0 0 0 0);
   border: 1px solid #000000;
+}
+
+#gyroCanvas {
+  @include position(absolute, 0 0 0 0);
+  border: 1px solid #000000;
+  margin: auto;
 }

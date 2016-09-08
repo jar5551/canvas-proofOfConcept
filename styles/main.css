@@ -32,6 +32,21 @@ section {
     background-color: #67b75f; }
   section#third {
     background-color: #6884b7; }
+  section#gyro {
+    position: relative;
+    background-color: #037fb7;
+    color: #ffffff;
+    height: 100%; }
+    section#gyro #level {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      width: 200px;
+      height: 400px;
+      margin: auto;
+      background-color: #000000; }
 
 #myCanvas {
   position: fixed;
@@ -40,5 +55,14 @@ section {
   bottom: 0;
   left: 0;
   border: 1px solid #000000; }
+
+#gyroCanvas {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border: 1px solid #000000;
+  margin: auto; }
 
 /*# sourceMappingURL=main.css.map */

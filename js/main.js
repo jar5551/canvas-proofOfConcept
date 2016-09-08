@@ -30,7 +30,7 @@ $(document).ready(function () {
         };
 
         _this.fillText = function (text, posX, posY) {
-            customCanvas.ctx.fillText(text, posX, posY);
+            _this.ctx.fillText(text, posX, posY);
         };
 
         _this.setFont = function (font) {
