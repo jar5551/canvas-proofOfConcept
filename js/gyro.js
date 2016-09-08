@@ -72,16 +72,6 @@ $(document).ready(function () {
     };
 
     GYROAPP.handleOrientation = function (event) {
-        this.orientation = {
-            absolute: event.absolute,
-            alpha: event.alpha,
-            beta: event.beta,
-            gamma: event.gamma
-
-        };
-
-        console.log(event.alpha);
-
         poziomica.rotate(event.alpha);
         gyroCanvas.setText(event.alpha);
 
@@ -105,8 +95,6 @@ $(document).ready(function () {
               'transform': 'rotate(' + degree + 'deg)'
           });
         };
-
-
     };
 
     var gyroCanvas = new GYROAPP.Canvas('gyroCanvas');
@@ -116,9 +104,6 @@ $(document).ready(function () {
     //gyroCanvas.drawRotatedRectangle(100, 50, 100, 200, 0);
 
     var poziomica = new GYROAPP.Levels('level');
-    poziomica.rotate(30);
-
-    console.log(poziomica);
 
     GYROAPP.init();
 });
