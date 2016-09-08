@@ -3,8 +3,8 @@ $(document).ready(function () {
     var GYROAPP = GYROAPP || {};
 
     GYROAPP.init = function () {
-        window.addEventListener("deviceorientation", GYROAPP.handleOrientation, true);
-
+        //window.addEventListener("deviceorientation", GYROAPP.handleOrientation, true);
+        window.ondeviceorientation = GYROAPP.handleOrientation;
     };
 
     GYROAPP.event = {
@@ -85,7 +85,7 @@ $(document).ready(function () {
         }
 
         poziomica.rotate(this.orientation.alpha);
-        gyroCanvas.setText(this.orientation);
+        gyroCanvas.setText(this.orientation.alpha);
 
         //gyroCanvas.drawRotatedRectangle(100, 50, 100, 200, this.orientation.alpha);
 
