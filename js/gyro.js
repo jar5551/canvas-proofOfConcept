@@ -6,14 +6,6 @@ $(document).ready(function () {
         //window.addEventListener("deviceorientation", GYROAPP.handleOrientation, true);
         window.ondeviceorientation = GYROAPP.handleOrientation;
 
-        window.ondevicemotion = function(event) {
-            var accelerationX = event.accelerationIncludingGravity.x;
-            var accelerationY = event.accelerationIncludingGravity.y;
-            var accelerationZ = event.accelerationIncludingGravity.z;
-        }
-
-        gyroCanvas.setText(accelerationX + ' ' + accelerationY + ' ' + accelerationZ);
-
     };
 
     GYROAPP.event = {
@@ -88,7 +80,7 @@ $(document).ready(function () {
 
         };
 
-        console.log(this.orientation.alpha);
+        console.log(event);
         if(!this.orientation.alpha) {
             return;
         }
