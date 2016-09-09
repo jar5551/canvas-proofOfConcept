@@ -72,8 +72,8 @@ $(document).ready(function () {
     };
 
     GYROAPP.handleOrientation = function (event) {
-        poziomica.rotate(event.gamma);
-        gyroCanvas.setText(event.gamma);
+        poziomica.rotate(event.beta);
+        gyroCanvas.setText(event.beta);
 
         //gyroCanvas.drawRotatedRectangle(100, 50, 100, 200, this.orientation.alpha);
 
